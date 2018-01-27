@@ -56,7 +56,7 @@
                 :cloudburst/name (or name (sanitize-lambda-name (ns-name ns-proper)
                                                                 fn-sym))
                 :cloudburst/provider (or provider :aws)
-                :cloudburst/runtime (or provider :java)
+                :cloudburst/runtime (or runtime :java8)
                 :cloudburst/memory (or memory 512))))))
 
 ;; --------------------
